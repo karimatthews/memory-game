@@ -1,8 +1,20 @@
+/*
+Colours:
+
+#OF1626;  Navy Blue
+#AB987A; Leather
+#FF533D;  Coral
+#F5F5F5;  Eggshell
+
+
+*/
+
 html {
    font-family: sans-serif;
    font-size: 18px;
    /*padding: 0; */
-   background-image: url("background.jpg");
+   /*background-image: url("background.jpg");*/
+   background-color: #0F1626;
    background-size: cover;
    color: white;
  }
@@ -14,6 +26,13 @@ body {
 
  #game {
    margin: 20px;
+     /*display: flex;
+     flex-direction: row;*/
+ }
+
+ .row {
+   display: flex;
+   flex-direction: row;
  }
 
  .numberSquares {
@@ -28,17 +47,23 @@ body {
    border-radius: 10px;
    width: 100px;
    height: 100px;
-   /*background-color: white;*/
+   background-color: #FF533D;
  }
 
  /* Change background color of buttons on hover */
-button:hover {
-    color: black;
-    background-color: white;
+ button:hover.card {
+    background-color: #AB987A;
 }
 
-/* Create an active/current tablink class */
-button.active {
-    color: black;
-    background-color: white;
+
+
+ /*Create an active/current tablink class */
+ .clickedCard {
+    margin: 6px;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+    font-weight: bold;
+    background-color: #F5F5F5;
 }
