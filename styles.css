@@ -1,12 +1,9 @@
 /*
 Colours:
-
-#OF1626;  Navy Blue
+#0F1626;  Navy Blue
 #AB987A; Leather
 #FF533D;  Coral
 #F5F5F5;  Eggshell
-
-
 */
 
 html {
@@ -22,6 +19,26 @@ html {
 body {
   margin: 50px;
   padding: 20px;
+
+}
+
+h1 {
+  font-size: 48px;
+  color: #AB987A;
+}
+
+.numberSquares {
+  margin: 10px;
+  margin-left: 20px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: white;
+}
+
+#choose {
+  display: flex;
+  font-size: 20px;
 }
 
  #game {
@@ -35,12 +52,6 @@ body {
    flex-direction: row;
  }
 
- .numberSquares {
-   margin: 6px;
-   border-radius: 10px;
-   width: 60px;
-   background-color: white;
- }
 
  .card {
    margin: 6px;
@@ -50,6 +61,17 @@ body {
    background-color: #FF533D;
    outline: 0;
  }
+
+ /*Create an active/current tablink class */
+ .clickedCard {
+    margin: 6px;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+    font-weight: bold;
+    background-color: #F5F5F5;
+}
 
  /* Change background color of buttons on hover */
  button:hover.card {
@@ -73,15 +95,5 @@ button:disabled.clickedcard {
   font-size: 48px;
   font-weight: bold;
   background-color: #F5F5F5;
-}
-
- /*Create an active/current tablink class */
- .clickedCard {
-    margin: 6px;
-    border-radius: 10px;
-    width: 100px;
-    height: 100px;
-    font-size: 48px;
-    font-weight: bold;
-    background-color: #F5F5F5;
+  color: black;
 }
