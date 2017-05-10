@@ -4,17 +4,25 @@
   </head>
   <body>
     <h1>Test Your Memory</h1>
-    <div id = choose>
+    <div id = difficulty class=choose>
       <p> Difficulty: </p>
-      <button class=numberSquares id='4'>Test</button>
-      <button class=numberSquares id='16'>Easy</button>
-      <button class=numberSquares id='36'>Hard</button>
-      <button class=numberSquares id='64'>Impossible</button>
+      <button class=numberSquares id='test'>Test</button>
+      <button class=numberSquares id='easy'>Easy</button>
+      <button class=numberSquares id='hard'>Hard</button>
+      <button class=numberSquares id='impossible'>Impossible</button>
+    </div>
+    <div id = speed class="choose">
+      <p> Speed </p>
+      <input type="range" id=slider min=100 max=3000></input>
     </div>
 
     <div>  </div>
 
     <div id="game">
+    </div>
+
+    <div>
+      <p> <span id = "score"></span> </p>
     </div>
 
     <link href="styles.css" rel="stylesheet">
