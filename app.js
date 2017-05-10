@@ -165,7 +165,7 @@ function createGrid() {
 }
 
 
-
+document.getElementById('4').onclick = createGrid;
 document.getElementById('16').onclick = createGrid;
 document.getElementById('36').onclick = createGrid;
 document.getElementById('64').onclick = createGrid;
