@@ -38,7 +38,7 @@ body {
  .numberSquares {
    margin: 6px;
    border-radius: 10px;
-   width: 100px;
+   width: 60px;
    background-color: white;
  }
 
@@ -48,6 +48,7 @@ body {
    width: 100px;
    height: 100px;
    background-color: #FF533D;
+   outline: 0;
  }
 
  /* Change background color of buttons on hover */
@@ -55,7 +56,24 @@ body {
     background-color: #AB987A;
 }
 
+button:disabled.card {
+  margin: 6px;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: #FF533D;
+  outline: 0;
+}
 
+button:disabled.clickedcard {
+  margin: 6px;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  font-size: 48px;
+  font-weight: bold;
+  background-color: #F5F5F5;
+}
 
  /*Create an active/current tablink class */
  .clickedCard {
